@@ -1,0 +1,32 @@
+site_name: Chess Training
+site_description: Positions and Lichess links for training
+repo_url: https://github.com/oschlueter/chess-training
+repo_name: oschlueter/chess-training
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - content.code.copy
+    - content.action.view
+    - content.action.edit
+
+plugins:
+  - search
+  - awesome-pages
+  - chessboard
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.7.1.min.js
+#  - https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js  # TODO should be part of plugin code
+#extra_css:
+#  - https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css  # TODO should be part of plugin code
